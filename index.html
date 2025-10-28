@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Typing Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Typing Master</h1>
+        </header>
+
+        <main>
+            <!-- Settings Section -->
+            <section class="settings">
+                <div class="setting-group">
+                    <label for="language">Language:</label>
+                    <select id="language">
+                        <option value="english">English</option>
+                        <option value="hindi">हिन्दी</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label for="mode">Mode:</label>
+                    <select id="mode">
+                        <option value="practice">Practice</option>
+                        <option value="test">Test (60s)</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="stat"><span id="wpm">0</span> WPM</div>
+                <div class="stat"><span id="accuracy">100</span>%</div>
+                <div class="stat"><span id="time">60</span>s</div>
+                <div class="stat"><span id="errors">0</span> Errors</div>
+            </section>
+
+            <!-- Typing Area -->
+            <section class="typing-area">
+                <div id="text-to-type"></div>
+                <textarea id="input-area" placeholder="Click here and start typing..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+            </section>
+
+            <!-- Control Buttons -->
+            <section class="controls">
+                <button id="start-btn">Start</button>
+                <button id="reset-btn">Reset</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
